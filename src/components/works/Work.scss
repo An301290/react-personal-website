@@ -1,12 +1,11 @@
 @import "../../global.scss";
 
 .works {
-  background-color: crimson;
+  background-color: #90c2e7;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-
   .arrow {
     height: 50px;
     position: absolute;
@@ -53,13 +52,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-        @include mobile {
-          width: 80%;
-          height: 150px;
-          margin: 15px 0;
-        }
-
+        box-shadow: 8px 8px gray;
         .left {
           flex: 4;
           height: 80%;
@@ -127,7 +120,7 @@
 
           img {
             width: 400px;
-            transform: rotate(-10deg);
+            // transform: rotate(-10deg);
           }
         }
       }

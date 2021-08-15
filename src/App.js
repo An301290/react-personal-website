@@ -5,7 +5,8 @@ import Menu from "./components/menu/Menu";
 import About from "./components/about/About";
 import Works from "./components/works/Works";
 import Testimonials from "./components/testimonials/Testimonials";
-import Contact from "./components/contact/Contact"
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,8 +18,9 @@ function App() {
         <About />
         <Works />
         <Testimonials />
-        <Contact/>
+        <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

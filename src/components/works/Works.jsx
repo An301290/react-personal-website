@@ -1,36 +1,43 @@
 import { useState } from "react";
 import "./Work.scss";
-import { link } from "react-router";
+
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
-      title: "Web Design",
+      title: "Web Design 1",
+      projects: "Make.garden",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      tools: "Javascript, Typescript, Api",
+      img: "assets/main.pic-removebg.png",
       link: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
     },
     {
       id: "2",
-      title: "Mobile Application",
+      title: "Mobile Application 2",
+      projects: "Make.garden",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      tools: "Javascript, Typescript, Api",
+      img: "assets/main.pic-removebg.png",
+      link: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
     },
     {
       id: "3",
-
-      title: "Branding",
+      title: "Branding 3",
+      projects: "Make.garden",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      tools: "Javascript, Typescript, Api",
+      img: "assets/main.pic-removebg.png",
+      link: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
     },
   ];
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 0)
+      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 2);
   };
 
   return (
@@ -41,12 +48,9 @@ export default function Works() {
       >
         {data.map((d) => (
           <div className="container">
-            <div className="item">
+            <div className="item" >
               <div className="left">
                 <div className="leftContainer">
-                  {/* <div className="imgContainer">
-                    <img src={d.icon} alt="" />
-                  </div> */}
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
                   <span>Projects</span>
@@ -74,5 +78,6 @@ export default function Works() {
         onClick={() => handleClick()}
       />
     </div>
+    
   );
 }
