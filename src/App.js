@@ -7,9 +7,9 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Resume from "./components/resume/Resume";
 
-
-console.log(process.env); 
+console.log(process.env);
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,6 +19,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <About />
+        <Resume />
         <Portfolio />
         <Testimonials />
         <Contact />
@@ -29,9 +30,6 @@ function App() {
 }
 
 export default App;
-
-//Instead of the first photo
-//https://codepen.io/manojsilag/pen/YBOOmB
 
 //skills sets
 //https://codepen.io/faelplg/pen/MWwxred

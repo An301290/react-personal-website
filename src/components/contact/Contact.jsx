@@ -4,8 +4,8 @@ import "./Contact.scss";
 require("dotenv").config();
 
 export default function Contact() {
+  
   const [message, setMessage] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setMessage(true);
@@ -29,7 +29,7 @@ export default function Contact() {
         }
       );
     e.target.reset();
-    console.log(process.env); 
+    console.log(process.env);
   }
 
   return (
@@ -40,10 +40,8 @@ export default function Contact() {
           <input type="text" placeholder="Name" name="name" />
           <input type="text" placeholder="Email" name="email" />
           <textarea placeholder="Message" name="message"></textarea>
-          <button type="submit">Send</button> 
-          {message && (
-            <span>Your message has been succesfully sent</span>
-          )}
+          <button type="submit">Send</button>
+          {message && <span>Your message has been succesfully sent</span>}
         </form>
       </div>
     </div>
