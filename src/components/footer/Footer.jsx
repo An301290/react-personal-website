@@ -5,22 +5,42 @@ import { FaLinkedinIn, FaGithub, FaBehance } from "react-icons/fa";
 
 export default function Footer() {
   return (
-   
- <div className="footer">
+    <div className="footer">
       <div className="wrapper">
         <div className="item-container">
           <p>@2021 - Website developed by Angel Samano Hamud</p>
         </div>
         <div className="social-icons">
-        <div className="item-container">
-          <FaLinkedinIn className="icon1" />
-        </div>
-        <div className="item-container">
-          <FaGithub className="icon1" />
-        </div>
-        <div className="item-container">
-          <FaBehance className="icon1" />
-        </div>
+          <div className="item-container">
+            <a
+              href="https://www.linkedin.com/in/angel-samano-hamud/"
+              target="_blank"
+              rel="noreferrer"
+              className="icon1"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
+          <div className="item-container">
+            <a
+              href="https://github.com/An301290"
+              target="_blank"
+              rel="noreferrer"
+              className="icon1"
+            >
+              <FaGithub />
+            </a>
+          </div>
+          <div className="item-container">
+            <a
+              href="https://www.behance.net/gallery/113687199/Tattoon-App"
+              target="_blank"
+              rel="noreferrer"
+              className="icon1"
+            >
+              <FaBehance />
+            </a>
+          </div>
         </div>
         <div className="item-container">
           <Person className="icon" />
@@ -30,10 +50,7 @@ export default function Footer() {
           <Mail className="icon" />
           <span>ansahamano@gmail.com</span>
         </div>
-        </div>
-      
       </div>
-     
+    </div>
   );
 }
-

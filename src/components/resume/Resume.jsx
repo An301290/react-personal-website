@@ -4,6 +4,28 @@ import "./Resume.scss";
 export default function Resume() {
   return (
     <div className="container-skills">
+        <div class="artboard">
+        <div class="card">
+          <div class="card__side card__side--back">
+            <div class="card__cover">
+              <h4 class="card__heading">
+                <span class="card__heading-span">Hola!</span>
+              </h4>
+            </div>
+            <div class="card__details">
+              <p>I’m Angel, a Web Developer with UX Design background with a strong customer focus and deep understanding of how to approach problems from a human-centered perspective. After years of working in sales, logistics as well as customer service areas and with a bachelor degree in International Relations, I have learned to solve problems in a simple and clear way with the optimum use of technologies and methods, putting the users’ needs first.
+</p>
+            </div>
+          </div>
+          <div class="card__side card__side--front">
+            <div class="card__theme">
+              <div class="card__theme-box">
+                <p class="card__title">About me </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="artboard">
         <div class="card">
           <div class="card__side card__side--back">

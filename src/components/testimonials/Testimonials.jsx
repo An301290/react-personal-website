@@ -1,26 +1,28 @@
 import "./Testimonial.scss";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
+      name: "Pierre Giddio",
       title: "Senior Developer",
       img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
+        "assets/Pierre.JPEG",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "I have seen Angel eager to learn new techniques and to go above solving technical problems. I was consistently delighted by his dedication and good humor! It is a pleasure to recommend such a positive person to any team looking for a hardworking developer.",
+        link: "https://www.linkedin.com/in/pierregiddio/",
+         featured: true,
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      name: "Szumiao Chen",
+      title: "UX Designer",
       img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
+        "assets/Pierre.JPEG",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "I have seen Angel eager to learn new techniques and to go above solving technical problems. I was consistently delighted by his dedication and good humor! It is a pleasure to recommend such a positive person to any team looking for a hardworking developer.",
+        link: "https://www.linkedin.com/in/pierregiddio/",
       featured: true,
     },
   ];
@@ -31,14 +33,13 @@ export default function Testimonials() {
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"}>
             <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
+              <img src="assets/right-arrow.png" className="left" alt="right-arrow" />
               <img
                 className="user"
                 src={d.img}
-                alt=""
+                alt="testimonial"
               />
-              <img className="right" src={d.icon} alt="" />
-            </div>
+              <a href={d.link} rel="noreferrer" target="_blank" className="right"><FaLinkedinIn  /></a></div>
             <div className="center">
               {d.desc}
             </div>
