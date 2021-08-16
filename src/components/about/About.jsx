@@ -9,16 +9,31 @@ export default function About() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      backSpeed:60,
-      strings: ["with UX design background", "Javascript", "React","Node.js", "MySQL", "Prototype", "Research"],
+      backSpeed: 60,
+      strings: [
+        "UX Design",
+        "Javascript",
+        "React",
+        "Node.js",
+        "MySQL",
+        "Prototype",
+        "Research",
+      ],
     });
   }, []);
 
   return (
     <div className="intro" id="intro">
       <div className="left">
-        <div className="imgContainer">
-          <img src="assets/main.pic-removebg.png" alt="angel"/>
+        <div className="box">
+          <div className="card">
+            <div className="imgBx">
+              <img src="assets/main.pic-removebg.png" alt="angel" />
+            </div>
+            <div className="details">
+              <h2>Web Developer with UX Design background</h2>
+            </div>
+          </div>
         </div>
       </div>
       <div className="right">
