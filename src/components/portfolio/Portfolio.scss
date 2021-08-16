@@ -52,7 +52,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 8px 8px gray;
+
         .left {
           flex: 4;
           height: 80%;
@@ -66,29 +66,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
-            .imgContainer {
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              background-color: rgb(245, 179, 155);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              @include mobile {
-                width: 20px;
-                height: 20px;
-              }
-
-              img {
-                width: 25px;
-
-                @include mobile {
-                  width: 15px;
-                }
-              }
-            }
             h2 {
               font-size: 20px;
 
@@ -103,7 +80,7 @@
               }
             }
             span {
-              font-size: 12px;
+              font-size: 13px;
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
@@ -117,10 +94,12 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
-
+          background-color: black;
+          color: white;
           img {
-            width: 400px;
-            // transform: rotate(-10deg);
+            width: 80%;
+            height: 70%;
+            border-radius: 10px;
           }
         }
       }

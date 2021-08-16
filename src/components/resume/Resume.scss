@@ -96,6 +96,7 @@ body {
   -moz-perspective: 200rem;
   perspective: 200rem;
   margin: 2rem;
+  border-radius: 10%;
 
   &__side {
     height: 52rem;
@@ -109,6 +110,7 @@ body {
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
+    border-radius: 10%;
 
     &--front {
       background-image: linear-gradient(
@@ -197,6 +199,9 @@ body {
   &__details {
     font-family: "Inconsolata", monospace;
     padding: 4rem 2rem;
+    p {
+      font-size: 20px;
+    }
     ul {
       list-style: none;
       width: 80%;

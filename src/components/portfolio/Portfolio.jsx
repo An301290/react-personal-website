@@ -6,29 +6,29 @@ export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
-      id: "1",
-      title: "Tattoo App",
-      projects: "Tattoon ",
-      desc: "Implemented the design thinking process to design a tattoo app.  Conducted research, created user personas, architecture information, wireframes as well as prototypes and tested them.",
-      image: "assets/UX_case_study.png",
-      link: "https://www.behance.net/gallery/113687199/Tattoon-App",
-    },
-    {
-      id: "2",
+       id: "1",
       title: "Make.garden",
-      projects: "Make.garden",
+      projects: "Web Development",
       desc: "Delivered a project to our customer Fred Vincent together with 3 other team members. During the process, I contributed to the implementation of the Mapbox API, which included retrieving data from our database, implementing a cluster and displaying data in the sidebar.",
       image: "assets/Make.garden.png",
       link: "https://makegarden.herokuapp.com/",
+      
     },
     {
-      id: "3",
-      title: "",
-      projects: "Make.garden",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      tools: "Javascript, Typescript, Api",
-      image: "assets/Make.garden.png",
-      link: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
+       id: "2",
+      title: "AllYouNeed",
+      projects: "Web Development",
+      desc: "Built an online shop, which allows to add or remove items to the shopping cart and calculates the total amount to pay, using a store API, Typescript, Material UI, Styled Components and React-Query.",
+      image: "assets/AllYouNeed.png",
+      link: "https://an301290.github.io/online-shop/",
+    },
+    {
+     id: "3",
+      title: "Tattoo App",
+      projects: "UX Design",
+      desc: "Implemented the design thinking process to design a tattoo app.  Conducted research, created user personas, architecture information, wireframes as well as prototypes and tested them.",
+      image: "assets/Tattoon.png",
+      link: "https://www.behance.net/gallery/113687199/Tattoon-App",
     },
   ];
 
