@@ -1,52 +1,90 @@
+import React from "react";
 import "./About.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
 
 export default function About() {
-  const textRef = useRef();
-
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      backSpeed: 60,
-      strings: [
-        "UX Design",
-        "Javascript",
-        "React",
-        "Node.js",
-        "MySQL",
-        "Prototype",
-        "Research",
-      ],
-    });
-  }, []);
-
   return (
-    <div className="intro" id="intro">
-      <div className="left">
-        <div className="box">
-          <div className="card">
-            <div className="imgBx">
-              <img src="assets/main.pic-removebg.png" alt="angel" />
+    <div className="container-skills" id="about">
+        <div class="artboard">
+        <div class="card">
+          <div class="card__side card__side--back">
+            <div class="card__cover">
+              <h4 class="card__heading">
+                <span class="card__heading-span">Hola!</span>
+              </h4>
             </div>
-            <div className="details">
-              <h2>Web Developer with UX Design background</h2>
+            <div class="card__details">
+              <p>I’m Angel, a Web Developer with UX Design background with a strong customer focus and deep understanding of how to approach problems from a human-centered perspective. After years of working in sales, logistics as well as customer service areas and with a bachelor degree in International Relations, I have learned to solve problems in a simple and clear way with the optimum use of technologies and methods, putting the users’ needs first.
+</p>
+            </div>
+          </div>
+          <div class="card__side card__side--front">
+            <div class="card__theme">
+              <div class="card__theme-box">
+                <p class="card__title">About me </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Angel Samano Hamud</h1>
-          <h3>
-            Web Developer <span ref={textRef}></span>
-          </h3>
+      <div class="artboard">
+        <div class="card">
+          <div class="card__side card__side--back">
+            <div class="card__cover">
+              <h4 class="card__heading">
+                <span class="card__heading-span">Hello World</span>
+              </h4>
+            </div>
+            <div class="card__details">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>MySQL </li>
+                <li>Node.Js</li>
+                <li>Express</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--front">
+            <div class="card__theme">
+              <div class="card__theme-box">
+                <p class="card__subject">Skills Set</p>
+                <p class="card__title">Web Developer</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
-        </a>
+      </div>
+      <div class="artboard">
+        <div class="card">
+          <div class="card__side card__side--back">
+            <div class="card__cover">
+              <h4 class="card__heading">
+                <span class="card__heading-span">User Needs First</span>
+              </h4>
+            </div>
+            <div class="card__details">
+              <ul>
+                <li>User-Centered Design</li>
+                <li>Competitive Analysis</li>
+                <li>Generative and Evaluative Research</li>
+                <li>User Personas</li>
+                <li>Information Architecture and User Flows</li>
+                <li>Wireframing and Prototyping</li>
+                <li>Sketch</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--front">
+            <div class="card__theme">
+              <div class="card__theme-box">
+                <p class="card__subject">Skills set</p>
+                <p class="card__title">UX Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

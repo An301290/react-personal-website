@@ -1,25 +1,24 @@
 import { useState } from "react";
 import "./app.scss";
-import Topbar from "./components/topbar/Topbar";
+import Navbar from "./components/navbar/Navbar";
 import Menu from "./components/menu/Menu";
-import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import Resume from "./components/resume/Resume";
+import About from "./components/about/About";
+import Intro from "./components/intro/Intro";
 
-console.log(process.env);
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
+        <Intro />
         <About />
-        <Resume />
         <Portfolio />
         <Testimonials />
         <Contact />
