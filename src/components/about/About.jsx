@@ -13,7 +13,7 @@ export default function About() {
               </h4>
             </div>
             <div class="card__details">
-              <p>I’m Angel, a Web Developer with UX Design background with a strong customer focus and deep understanding of how to approach problems from a human-centered perspective. After years of working in sales, logistics as well as customer service areas and with a bachelor degree in International Relations, I have learned to solve problems in a simple and clear way with the optimum use of technologies and methods, putting the users’ needs first.
+              <p>I’m Angel, a Web Developer with UX Design background. After years of working in sales, logistics as well as customer service areas and with a bachelor degree in International Relations, I have developed a strong customer focus and deep understanding of how to approach problems from a human-centered perspective.
 </p>
             </div>
           </div>

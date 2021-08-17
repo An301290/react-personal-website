@@ -9,7 +9,6 @@ import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
 import Intro from "./components/intro/Intro";
 
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -32,3 +31,5 @@ export default App;
 
 //skills sets
 //https://codepen.io/faelplg/pen/MWwxred
+
+// <Footer />

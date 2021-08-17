@@ -44,6 +44,6 @@ export default function Contact() {
           {message && <span>Your message has been succesfully sent</span>}
         </form>
       </div>
-    </div>
+      </div>
   );
 }

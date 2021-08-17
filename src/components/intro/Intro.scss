@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background: white;
+  background-image: url("../images/test4.jpg");
   display: flex;
 
   @include mobile {
@@ -51,7 +51,7 @@
         left: 10px;
         bottom: 10px;
         right: 10px;
-        background: #222;
+        background: $mainColor;
         transition: 0.5s;
         z-index: 1;
         border-radius: 10%;
@@ -76,7 +76,7 @@
           padding: 0;
           font-weight: 600;
           font-size: 20px;
-          color: #777;
+          color: #edcc4b;
           text-transform: uppercase;
         }
       }
@@ -111,6 +111,7 @@
       h1 {
         font-size: 60px;
         margin: 10px 0;
+        color: white;
 
         @include mobile {
           font-size: 40px;
@@ -118,9 +119,11 @@
       }
       h2 {
         font-size: 35px;
+        color: #edcc4b;
       }
       h3 {
         font-size: 30px;
+        color: white;
 
         @include mobile {
           font-size: 20px;
@@ -128,7 +131,7 @@
 
         span {
           font-size: inherit;
-          color: crimson;
+          color: #edcc4b;
         }
 
         .ityped-cursor {
