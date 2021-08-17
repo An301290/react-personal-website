@@ -4,13 +4,15 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: $mainColor;
 }
-$background-color: #ece0e8;
-$color-primary-light: #ca3782;
-$color-primary-dark: #1e0b36;
-$color-black: #000;
-$color-gray-dark: #aaa;
-$color-gray-light: #eee;
+
+$background-color: #fa6400;
+$color-primary-light: #fa6400;
+$color-primary-dark: #fa6400;
+$color-black: #fa6400;
+$color-gray-dark: #fa6400;
+$color-gray-light: #fa6400;
 $color-white: #fff;
 
 @mixin absCenter {
@@ -173,11 +175,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-image: linear-gradient(
-        to top right,
-        rgba($color-primary-dark, 0.65),
-        rgba($color-primary-light, 0.65)
-      ),
-      url();
+      to top right,
+      rgba($color-primary-dark, 0.65),
+      rgba($color-primary-light, 0.65)
+    );
   }
 
   &__heading {

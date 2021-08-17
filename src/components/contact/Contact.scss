@@ -1,8 +1,9 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
+  background-color: #59a0b6d8;
   display: flex;
+  // justify-content: center;
 
   @include mobile {
     flex-direction: column;
@@ -12,21 +13,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+     padding-bottom: 25px;
 
     h2 {
-      font-size: 30px;
-      padding: 30px;
+      font-size: 50px;
+      padding: 20px 200px 90px;
     }
 
     form {
-      width: 70%;
-      height: 50%;
+      width: 80%;
+      height: 60%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-
+      padding: 20px;
       input {
         width: 600px;
         height: 30px;
@@ -70,4 +72,3 @@
     }
   }
 }
-

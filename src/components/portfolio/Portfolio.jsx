@@ -9,7 +9,7 @@ export default function Portfolio() {
        id: "1",
       title: "Make.garden",
       projects: "Web Development",
-      desc: "Delivered a project to our customer Fred Vincent together with 3 other team members. During the process, I contributed to the implementation of the Mapbox API, which included retrieving data from our database, implementing a cluster and displaying data in the sidebar.",
+      desc: "Delivered to our customer Fred Vincent together with 3 other team members. I contributed to the implementation of the Mapbox API, retrieving data from our database, implementing a cluster in the Map and displaying data in the sidebar.",
       image: "assets/Make.garden.png",
       link: "https://makegarden.herokuapp.com/",
       
@@ -40,6 +40,7 @@ export default function Portfolio() {
 
   return (
     <div className="works" id="portfolio">
+      <h1 className="main-title">Portfolio</h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

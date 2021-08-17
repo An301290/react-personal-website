@@ -1,12 +1,15 @@
-$mainColor: #15023a;
+$mainColor: #1e1d1d;
 
 $width: 768px;
 
-$fontFamily: 'Roboto', sans-serif; 
-$fontSize: 16px; 
+$fontFamily: "Roboto", sans-serif;
+
+$fontSizeTitle: 24px;
+$fontSizeSubTitle: 20px;
+$fontSizeText: 16px;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
-    }
+  @media (max-width: #{$width}) {
+    @content;
+  }
 }
