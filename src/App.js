@@ -12,19 +12,18 @@ import Intro from "./components/intro/Intro";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-  
-      <div className="app">
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <div className="sections">
-          <Intro />
-          <About />
-          <Portfolio />
-          <Testimonials />
-          <Contact />
-        </div>
-        {/* <Footer/> */}
+    <div className="app">
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div className="sections">
+        <Intro />
+        <About />
+        <Portfolio />
+        <Testimonials />
+        <Contact />
       </div>
+      <Footer />
+    </div>
   );
 }
 
@@ -33,7 +32,4 @@ export default App;
 //skills sets
 //https://codepen.io/faelplg/pen/MWwxred
 
-
-       // <Footer />
-      
-
+// <Footer />

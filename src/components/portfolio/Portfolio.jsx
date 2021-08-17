@@ -60,7 +60,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="right">
-                  <img src={d.image} alt="project-image" />
+                <a href={d.link} rel="noreferrer" target="_blank">   <img src={d.image} alt="project" /></a>
               </div>
             </div>
           </div>

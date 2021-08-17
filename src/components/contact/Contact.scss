@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: #59a0b6d8;
+  background-color: #183052;
   display: flex;
   // justify-content: center;
 
@@ -14,11 +14,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-     padding-bottom: 25px;
+    padding-bottom: 25px;
 
     h2 {
       font-size: 50px;
       padding: 20px 200px 90px;
+      color: white;
     }
 
     form {
@@ -52,14 +53,15 @@
       }
 
       button {
-        width: 150px;
-        height: 30px;
-        color: white;
-        background-color: crimson;
+        width: 170px;
+        height: 50px;
+        color: black;
+        background-color: #edcc4b;
         border: none;
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
+        font-size: $fontSizeText;
 
         &:focus {
           outline: none;
@@ -68,6 +70,7 @@
 
       span {
         color: green;
+        font-size: $fontSizeText;
       }
     }
   }

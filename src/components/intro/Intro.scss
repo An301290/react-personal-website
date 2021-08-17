@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-image: url("../images/minimalism-4105894_1920.jpg");
+  background-image: url("../images/test4.jpg");
   display: flex;
 
   @include mobile {
@@ -76,7 +76,7 @@
           padding: 0;
           font-weight: 600;
           font-size: 20px;
-          color: white;
+          color: #edcc4b;
           text-transform: uppercase;
         }
       }
@@ -119,9 +119,11 @@
       }
       h2 {
         font-size: 35px;
+        color: #edcc4b;
       }
       h3 {
         font-size: 30px;
+        color: white;
 
         @include mobile {
           font-size: 20px;
@@ -129,7 +131,7 @@
 
         span {
           font-size: inherit;
-          color: white;
+          color: #edcc4b;
         }
 
         .ityped-cursor {

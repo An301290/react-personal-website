@@ -7,12 +7,12 @@
   background-color: $mainColor;
 }
 
-$background-color: #fa6400;
-$color-primary-light: #fa6400;
-$color-primary-dark: #fa6400;
-$color-black: #fa6400;
-$color-gray-dark: #fa6400;
-$color-gray-light: #fa6400;
+$background-color: #edcc4b;
+$color-primary-light: #edcc4b;
+$color-primary-dark: #edcc4b;
+$color-black: #edcc4b;
+$color-gray-dark: #edcc4b;
+$color-gray-light: #edcc4b;
 $color-white: #fff;
 
 @mixin absCenter {
@@ -117,8 +117,8 @@ body {
     &--front {
       background-image: linear-gradient(
           to right bottom,
-          rgba($color-primary-dark, 0.65),
-          rgba($color-primary-light, 0.7)
+          rgba($color-primary-dark, 0.9),
+          rgba($color-primary-light, 0.9)
         ),
         url();
     }
@@ -202,6 +202,7 @@ body {
     padding: 4rem 2rem;
     p {
       font-size: 20px;
+      line-height: 1.5s;
     }
     ul {
       list-style: none;
