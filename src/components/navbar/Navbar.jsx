@@ -1,6 +1,6 @@
-import "./TopBar.scss";
+import "./Navbar.scss";
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
