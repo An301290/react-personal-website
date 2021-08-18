@@ -15,17 +15,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    @include mobile {
+      padding: 20px;
+    }
     .left {
       display: flex;
       align-items: center;
 
       .logo {
         font-size: 40px;
-        font-weight: 700;
+        font-weight: 400;
         text-decoration: none;
         color: white;
         margin-right: 40px;
+        @include mobile {
+          font-size: 30px;
+        }
       }
 
       .itemContainer {

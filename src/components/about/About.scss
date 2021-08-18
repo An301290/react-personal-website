@@ -8,11 +8,6 @@
 }
 
 $background-color: #edcc4b;
-$color-primary-light: #edcc4b;
-$color-primary-dark: #edcc4b;
-$color-black: #edcc4b;
-$color-gray-dark: #edcc4b;
-$color-gray-light: #edcc4b;
 $color-white: #fff;
 
 @mixin absCenter {
@@ -111,14 +106,14 @@ body {
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
+    box-shadow: 0 2rem 6rem rgba($background-color, 0.15);
     border-radius: 10%;
 
     &--front {
       background-image: linear-gradient(
           to right bottom,
-          rgba($color-primary-dark, 0.9),
-          rgba($color-primary-light, 0.9)
+          rgba($background-color, 0.9),
+          rgba($background-color, 0.9)
         ),
         url();
     }
@@ -176,8 +171,8 @@ body {
     border-top-right-radius: 3px;
     background-image: linear-gradient(
       to top right,
-      rgba($color-primary-dark, 0.65),
-      rgba($color-primary-light, 0.65)
+      rgba($background-color, 0.65),
+      rgba($background-color, 0.65)
     );
   }
 
@@ -215,7 +210,7 @@ body {
         padding: 1rem;
 
         &:not(:last-child) {
-          border-bottom: 1px solid $color-gray-light;
+          border-bottom: 1px solid $background-color;
         }
       }
     }
@@ -226,7 +221,7 @@ body {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
-    box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
+    box-shadow: 0 2rem 6rem rgba($background-color, 0.15);
 
     &__side {
       height: auto;

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Portfolio.scss";
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import { dataPortfolio } from "../../Data"
 
 
