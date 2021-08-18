@@ -17,8 +17,8 @@
     padding-bottom: 25px;
 
     h2 {
-      font-size: 50px;
-      padding: 20px 200px 90px;
+      font-size: 40px;
+      padding: 20px 230px 90px;
       color: white;
     }
 
@@ -29,7 +29,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      padding: 20px;
+
       input {
         width: 600px;
         height: 30px;
@@ -52,17 +52,21 @@
         }
       }
 
-      button {
-        width: 170px;
+      .button {
+        width: 160px;
         height: 50px;
-        color: black;
         background-color: #edcc4b;
+        color: black;
         border: none;
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
         font-size: $fontSizeText;
+        transition-duration: 0.4s;
 
+        &:hover {
+          background-color: #183052;
+        }
         &:focus {
           outline: none;
         }
