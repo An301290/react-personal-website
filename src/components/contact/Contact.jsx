@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.scss";
+import Button from "@material-ui/core/Button"
+import SendIcon from '@material-ui/icons/Send';
 require("dotenv").config();
 
 export default function Contact() {
@@ -40,7 +42,14 @@ export default function Contact() {
           <input type="text" placeholder="Name" name="name" />
           <input type="text" placeholder="Email" name="email" />
           <textarea placeholder="Message" name="message"></textarea>
-          <button type="submit">Send</button>
+          <Button
+          className="button"
+          endIcon={<SendIcon/>}
+          type="submit"
+          color="black"
+          >
+            Send 
+          </Button>
           {message && <span>Your message has been succesfully sent</span>}
         </form>
       </div>

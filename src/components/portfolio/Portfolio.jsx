@@ -1,41 +1,16 @@
 import { useState } from "react";
 import "./Portfolio.scss";
+import { dataPortfolio } from "../../Data"
+
 
 
 export default function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const data = [
-    {
-       id: "1",
-      title: "Make.garden",
-      projects: "Web Development",
-      desc: "Delivered to our customer Fred Vincent together with 3 other team members. I contributed to the implementation of the Mapbox API, retrieving data from our database, implementing a cluster in the Map and displaying data in the sidebar.",
-      image: "assets/Make.garden.png",
-      link: "https://makegarden.herokuapp.com/",
-      
-    },
-    {
-       id: "2",
-      title: "AllYouNeed",
-      projects: "Web Development",
-      desc: "Built an online shop, which allows to add or remove items to the shopping cart and calculates the total amount to pay, using a store API, Typescript, Material UI, Styled Components and React-Query.",
-      image: "assets/AllYouNeed.png",
-      link: "https://an301290.github.io/online-shop/",
-    },
-    {
-     id: "3",
-      title: "Tattoo App",
-      projects: "UX Design",
-      desc: "Implemented the design thinking process to design a tattoo app.  Conducted research, created user personas, architecture information, wireframes as well as prototypes and tested them.",
-      image: "assets/Tattoon.png",
-      link: "https://www.behance.net/gallery/113687199/Tattoon-App",
-    },
-  ];
 
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 0)
-      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 2);
+      : setCurrentSlide(currentSlide < dataPortfolio.length - 1 ? currentSlide + 1 : 2);
   };
 
   return (
@@ -45,7 +20,7 @@ export default function Portfolio() {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {data.map((d) => (
+        {dataPortfolio.map((d) => (
           <div className="container">
             <div className="item" >
               <div className="left">
@@ -69,16 +44,20 @@ export default function Portfolio() {
       <img
         src="assets/arrow.png"
         className="arrow left"
-        alt=""
+        alt="aqrrow-left"
         onClick={() => handleClick("left")}
       />
-      <img
+       <img
         src="assets/arrow.png"
         className="arrow right"
-        alt=""
-        onClick={() => handleClick()}
-      />
+        alt="arrow-right"
+        onClick={() => handleClick("right")}
+      /> 
     </div>
+   
     
   );
 }
+
+
+ 

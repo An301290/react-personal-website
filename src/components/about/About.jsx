@@ -61,14 +61,14 @@ export default function About() {
           <div class="card__side card__side--back">
             <div class="card__cover">
               <h4 class="card__heading">
-                <span class="card__heading-span">User Needs First</span>
+                <span class="card__heading-span">User Needs</span>
               </h4>
             </div>
             <div class="card__details">
               <ul>
                 <li>User-Centered Design</li>
                 <li>Competitive Analysis</li>
-                <li>Generative and Evaluative Research</li>
+                <li>Research</li>
                 <li>User Personas</li>
                 <li>Information Architecture and User Flows</li>
                 <li>Wireframing and Prototyping</li>
