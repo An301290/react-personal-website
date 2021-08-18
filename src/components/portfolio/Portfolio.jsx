@@ -54,8 +54,6 @@ export default function Portfolio() {
         onClick={() => handleClick("right")}
       /> 
     </div>
-   
-    
   );
 }
 

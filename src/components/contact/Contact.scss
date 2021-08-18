@@ -3,8 +3,6 @@
 .contact {
   background-color: #183052;
   display: flex;
-  // justify-content: center;
-
   @include mobile {
     flex-direction: column;
   }
@@ -20,6 +18,9 @@
       font-size: 40px;
       padding: 20px 230px 90px;
       color: white;
+      @include mobile {
+        font-size: 20px;
+      }
     }
 
     form {
@@ -70,8 +71,11 @@
         &:focus {
           outline: none;
         }
+        @include mobile {
+          width: 90px;
+          height: 35px;
+        }
       }
-
       span {
         color: green;
         font-size: $fontSizeText;
