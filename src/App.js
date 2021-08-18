@@ -28,8 +28,3 @@ function App() {
 }
 
 export default App;
-
-//skills sets
-//https://codepen.io/faelplg/pen/MWwxred
-
-// <Footer />

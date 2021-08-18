@@ -5,18 +5,20 @@
   flex-direction: row;
   justify-content: center;
   background-color: $mainColor;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-
 $background-color: #edcc4b;
 $color-white: #fff;
-
 @mixin absCenter {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 @mixin flexCenter {
   flex-flow: row;
   align-items: center;
@@ -131,7 +133,6 @@ body {
     transform: rotateY(-180deg);
   }
 
-  // Front side of the card
   &__theme {
     @include absCenter;
     top: 54%;
@@ -159,12 +160,10 @@ body {
     font-weight: 100;
   }
 
-  // Back side of the card
   &__cover {
     position: relative;
     background-size: cover;
     height: 14rem;
-    // background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
@@ -214,54 +213,54 @@ body {
         }
       }
     }
-  }
+    @include mobile {
+      @media only screen and (max-width: 37.5em),
+        only screen and (hover: none) {
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 2rem 6rem rgba($background-color, 0.15);
 
-  // Responsivity
-  @media only screen and (max-width: 37.5em), only screen and (hover: none) {
-    height: auto;
-    border-radius: 3px;
-    background-color: $color-white;
-    box-shadow: 0 2rem 6rem rgba($background-color, 0.15);
+        &__side {
+          height: auto;
+          position: relative;
+          box-shadow: none;
 
-    &__side {
-      height: auto;
-      position: relative;
-      box-shadow: none;
+          &--front {
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          }
 
-      &--front {
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          &--back {
+            transform: rotateY(0);
+          }
+        }
+
+        &:hover &__side--front {
+          transform: rotateY(0);
+        }
+
+        &__details {
+          padding: 3rem 2rem;
+        }
+
+        &__theme {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: translate(0);
+          width: 100%;
+          padding: 5rem 4rem 1.5rem 4rem;
+          text-align: right;
+        }
+
+        &__theme-box {
+          margin-bottom: 1.5rem;
+        }
+
+        &__title {
+          font-size: 4rem;
+        }
       }
-
-      &--back {
-        transform: rotateY(0);
-      }
-    }
-
-    &:hover &__side--front {
-      transform: rotateY(0);
-    }
-
-    &__details {
-      padding: 3rem 2rem;
-    }
-
-    // Front side responsive styling
-    &__theme {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translate(0);
-      width: 100%;
-      padding: 5rem 4rem 1.5rem 4rem;
-      text-align: right;
-    }
-
-    &__theme-box {
-      margin-bottom: 1.5rem;
-    }
-
-    &__title {
-      font-size: 4rem;
     }
   }
 }

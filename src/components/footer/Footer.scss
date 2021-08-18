@@ -11,27 +11,22 @@
   justify-content: space-around;
   position: relative;
   bottom: 0px;
-
+  @include mobile {
+    display: none;
+  }
   .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     .social-icons {
       display: flex;
       padding: 150px;
     }
-
     .item-container {
       display: flex;
       align-items: center;
       margin-left: 30px;
       font-size: $fontSizeText;
-
-      @include mobile {
-        display: none;
-      }
-
       .icon {
         font-size: 18px;
         margin-right: 5px;
@@ -42,7 +37,6 @@
         margin-right: 5px;
         color: white;
       }
-
       span {
         font-size: 15px;
         font-weight: 500;
