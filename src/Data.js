@@ -35,17 +35,13 @@ export const dataTestimonials = [
     link: "https://www.linkedin.com/in/pierregiddio/",
     featured: true,
   },
-  {
-    id: 2,
-    name: "Szumiao Chen",
-    title: "UX Designer",
-    img: "assets/Pierre.JPEG",
-    desc: "I have seen Angel eager to learn new techniques and to go above solving technical problems. I was consistently delighted by his dedication and good humor! It is a pleasure to recommend such a positive person to any team looking for a hardworking developer.",
-    link: "https://www.linkedin.com/in/pierregiddio/",
-    featured: true,
-  },
+  // {
+  //   id: 2,
+  //   name: "",
+  //   title: "",
+  //   img: "",
+  //   desc: ".",
+  //   link: "",
+  //   featured: true,
+  // },
 ];
-
-export const dataResume = [
-
-]
